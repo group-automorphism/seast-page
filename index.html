@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School of Engineering, Applied Science and Technology | CUD</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        cud: {
+                            red: '#A81C24', // Canadian University Dubai Crimson
+                            dark: '#111827',
+                            gray: '#F9FAFB',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+    <!-- Top Utility Bar -->
+    <div class="bg-gray-100 border-b border-gray-200 text-xs py-2 px-6 hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-600 hover:text-cud-red transition">Enquire Now</a>
+                <span class="text-gray-300">|</span>
+                <a href="#" class="text-gray-600 hover:text-cud-red transition">Apply Online</a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-600 hover:text-cud-red transition">Portals</a>
+                <span class="text-gray-300">|</span>
+                <a href="#" class="text-gray-600 hover:text-cud-red transition">العربية</a>
+                <span class="text-gray-300">|</span>
+                <span class="text-gray-800 font-semibold">English</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo Placeholder (CUD) -->
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-cud-red rounded flex items-center justify-center text-white font-black text-xl">🍁</div>
+                <div>
+                    <span class="block font-black text-lg tracking-tight text-cud-dark">CANADIAN UNIVERSITY</span>
+                    <span class="block text-xs font-semibold tracking-widest text-cud-red -mt-1">DUBAI</span>
+                </div>
+            </div>
+            <!-- Main Nav Items -->
+            <nav class="hidden lg:flex space-x-8 text-sm font-medium text-gray-700">
+                <a href="#" class="hover:text-cud-red transition">Discover CUD</a>
+                <a href="#" class="hover:text-cud-red transition">Admissions</a>
+                <a href="#" class="hover:text-cud-red transition">Academics</a>
+                <a href="#" class="hover:text-cud-red transition">LRC</a>
+                <a href="#" class="hover:text-cud-red transition">Research</a>
+                <a href="#" class="hover:text-cud-red transition">Incubator</a>
+            </nav>
+            <!-- CTA Button -->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="bg-cud-red text-white text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded hover:bg-red-800 transition">Apply Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Breadcrumbs -->
+    <div class="bg-gray-50 py-3 px-6 border-b border-gray-200 text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto">
+            Home <span class="mx-2">›</span> Schools and Departments <span class="mx-2">›</span> <span class="text-gray-800 font-medium">SEAST</span>
+        </div>
+    </div>
+
+    <!-- Hero Banner -->
+    <section class="relative bg-cud-dark text-white overflow-hidden">
+        <!-- Background Overlay Image -->
+        <div class="absolute inset-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=1920" alt="Robotics Lab Background" class="w-full h-full object-cover">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-6 py-24 md:py-32 flex flex-col justify-center">
+            <span class="text-cud-red font-semibold tracking-widest uppercase text-xs mb-3">School of Engineering, Applied Science and Technology</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">Engineer Tomorrow</h1>
+            <p class="max-w-2xl text-lg text-gray-300 leading-relaxed mb-8">
+                At SEAST, our research advances core methodologies and technologies underpinning modern engineered systems. We bridge theoretical innovation, computational modeling, and real-world deployment.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#departments" class="bg-cud-red text-white font-semibold text-sm px-6 py-3 rounded hover:bg-red-800 transition">Explore Departments</a>
+                <a href="#research" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold text-sm px-6 py-3 rounded transition">View Research Focus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky Sub-Navigation (Replaces Old Sidebar) -->
+    <div class="bg-white border-b border-gray-200 sticky top-[73px] z-40 hidden md:block shadow-sm">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex space-x-8 text-sm font-medium py-4">
+                <a href="#departments" class="text-gray-600 hover:text-cud-red transition">Departments</a>
+                <a href="#research" class="text-gray-600 hover:text-cud-red transition">Research Programs</a>
+                <a href="#chair" class="text-gray-600 hover:text-cud-red transition">Chair's Message</a>
+                <a href="#highlights" class="text-gray-600 hover:text-cud-red transition">Research Highlights</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section: Academic Departments -->
+    <section id="departments" class="py-20 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl font-extrabold text-cud-dark mt-2">Departments of SEAST</h2>
+            <p class="text-gray-600 mt-4">We offer industry-aligned academic structures designed to train the next generation of engineers, computational scientists, and technology leaders.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Card 1: Computer Engineering -->
+            <div class="border border-gray-200 rounded-xl overflow-hidden bg-cud-gray hover:shadow-lg transition duration-300 flex flex-col justify-between">
+                <div>
+                    <!-- Header Image -->
+                    <a href="https://www.cud.ac.ae/faculties-and-departments/engineering-applied-science-and-technology/computer-engineering-and-computational-sciences" target="_blank" class="block h-52 overflow-hidden relative">
+                        <img src="https://www.cud.ac.ae/sites/default/files/styles/scale_640x360_50_percent_/public/general/2024/department/dept_of_computer_engg_0.png?h=b217c293" alt="Computer Engineering Dept" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </a>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-cud-dark mb-4">
+                            <a href="https://www.cud.ac.ae/faculties-and-departments/engineering-applied-science-and-technology/computer-engineering-and-computational-sciences" target="_blank" class="hover:text-cud-red transition">Department of Computer Engineering and Computational Sciences</a>
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">Explore the frontiers of software development, artificial intelligence systems, computer networking architectures, and cryptographic cybersecurity frameworks.</p>
+                    </div>
+                </div>
+                <div class="px-8 pb-8">
+                    <a href="https://www.cud.ac.ae/faculties-and-departments/engineering-applied-science-and-technology/computer-engineering-and-computational-sciences" target="_blank" class="text-cud-red font-semibold text-sm hover:underline flex items-center">Learn More <span class="ml-1">→</span></a>
+                </div>
+            </div>
+            <!-- Card 2: Electrical Engineering -->
+            <div class="border border-gray-200 rounded-xl overflow-hidden bg-cud-gray hover:shadow-lg transition duration-300 flex flex-col justify-between">
+                <div>
+                    <!-- Header Image -->
+                    <a href="https://www.cud.ac.ae/faculties-and-departments/engineering-applied-science-and-technology/electrical-engineering" target="_blank" class="block h-52 overflow-hidden relative">
+                        <img src="https://www.cud.ac.ae/sites/default/files/styles/scale_640x360_50_percent_/public/general/2024/department/dept_of_electrical_engin.png?h=b217c293" alt="Electrical Engineering Dept" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </a>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-cud-dark mb-4">
+                            <a href="https://www.cud.ac.ae/faculties-and-departments/engineering-applied-science-and-technology/electrical-engineering" target="_blank" class="hover:text-cud-red transition">Department of Electrical Engineering</a>
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">Focus on power grid optimization, embedded electronic control design, robotics, signal processing, and integrated smart infrastructure solutions.</p>
+                    </div>
+                </div>
+                <div class="px-8 pb-8">
+                    <a href="https://www.cud.ac.ae/faculties-and-departments/engineering-applied-science-and-technology/electrical-engineering" target="_blank" class="text-cud-red font-semibold text-sm hover:underline flex items-center">Learn More <span class="ml-1">→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Research Focus Areas (Sleek 4-Column Grid) -->
+    <section id="research" class="bg-cud-gray py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-cud-dark mt-2">Research Focus Areas</h2>
+                <p class="text-gray-600 mt-4">SEAST investigators collaborate globally to develop secure, automated, and sustainable engineering initiatives targeting critical industrial needs.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Focus Block 1: Robotics -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 bg-cud-red text-white rounded-lg flex items-center justify-center mb-5 font-bold text-sm">01</div>
+                        <h3 class="text-lg font-bold text-cud-dark mb-2">Robotics</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Robotics, sensing systems, and advanced autonomous frameworks tailored for complex industrial environments and automation workflows.</p>
+                    </div>
+                </div>
+                <!-- Focus Block 2: Artificial Intelligence -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 bg-cud-red text-white rounded-lg flex items-center justify-center mb-5 font-bold text-sm">02</div>
+                        <h3 class="text-lg font-bold text-cud-dark mb-2">Artificial Intelligence</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">AI-based predictive analytics models, machine learning architectures, and computational modeling applied to environmental systems and engineering.</p>
+                    </div>
+                </div>
+                <!-- Focus Block 3: Systems -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 bg-cud-red text-white rounded-lg flex items-center justify-center mb-5 font-bold text-sm">03</div>
+                        <h3 class="text-lg font-bold text-cud-dark mb-2">Systems</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Integrated engineering systems, including control architectures, smart grid optimization, secure network designs, and cryptographic protection suites.</p>
+                    </div>
+                </div>
+                <!-- Focus Block 4: Healthcare Informatics -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 bg-cud-red text-white rounded-lg flex items-center justify-center mb-5 font-bold text-sm">04</div>
+                        <h3 class="text-lg font-bold text-cud-dark mb-2">Healthcare Informatics</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Computational diagnostics tools, biomedical signal processing frameworks, imaging informatics, and technology to advance healthcare innovation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Message from the Chair -->
+    <section id="chair" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="bg-cud-dark text-white rounded-2xl overflow-hidden shadow-xl grid md:grid-cols-12 items-center">
+            <!-- Left Profile Image -->
+            <div class="md:col-span-4 h-full min-h-[350px] relative">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800" alt="Prof. Sherif Moussa" class="w-full h-full object-cover">
+            </div>
+            <!-- Right Message Content -->
+            <div class="md:col-span-8 p-8 md:p-12 lg:p-16 flex flex-col justify-between">
+                <div>
+                    <span class="text-cud-red text-xs font-bold uppercase tracking-widest block mb-4">Leadership Spotlight</span>
+                    <svg class="w-10 h-10 text-cud-red/30 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.85h4.999v10h-9.982zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.85h4.999v10h-10z"/></svg>
+                    <p class="text-lg text-gray-200 leading-relaxed mb-6 italic">
+                        Through engineering research and cross-disciplinary innovation, SEAST continues to contribute to the creation of secure, intelligent, and sustainable technologies tailored to address local, regional, and global societal dynamics.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold">Prof. Firuz Kamalov</h4>
+                    <p class="text-sm text-cud-red font-medium">Dean, School of Engineering, Applied Science and Technology </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Research Highlights (Clean Uniform Grid with live URLs) -->
+    <section id="highlights" class="bg-cud-gray py-20 border-t border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
+                <div>
+                    <span class="text-cud-red text-xs font-bold uppercase tracking-wider">News & Achievements</span>
+                    <h2 class="text-3xl font-extrabold text-cud-dark mt-2">SEAST Research Highlights</h2>
+                </div>
+                <a href="#" class="mt-4 md:mt-0 text-cud-red font-semibold text-sm hover:underline flex items-center">View All Publications & News <span class="ml-1">→</span></a>
+            </div>
+
+            <!-- News Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Highlight Card 1 (SM 2026) -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 flex flex-col justify-between hover:shadow-lg transition duration-300">
+                    <div>
+                        <a href="https://ieeesm.org/" target="_blank" class="block h-48 overflow-hidden relative bg-gray-100 flex items-center justify-center p-6">
+                            <span class="text-xs bg-cud-red text-white font-bold uppercase tracking-widest px-3 py-1.5 rounded absolute top-4 left-4 z-10">CONFERENCE</span>
+                            <div class="w-24 h-24 bg-red-50 text-cud-red rounded-full flex items-center justify-center font-extrabold text-sm border-2 border-cud-red/20 shadow-inner">
+                                SM '26
+                            </div>
+                        </a>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-cud-dark leading-snug mb-3">
+                                <a href="https://ieeesm.org/" target="_blank" class="hover:text-cud-red transition">CUD to Host 2026 International Conference on Smart Mobility (SM'26)</a>
+                            </h3>
+                            <p class="text-gray-600 text-sm line-clamp-3">
+                                Academic communities converge on Dubai for global workshops on automated routing, intelligent vehicle systems, and sustainable modern transit methods.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="https://ieeesm.org/" target="_blank" class="text-cud-red font-semibold text-sm hover:underline inline-flex items-center">Read Article <span class="ml-1">→</span></a>
+                    </div>
+                </div>
+
+                <!-- Highlight Card 2 (Grants) -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 flex flex-col justify-between hover:shadow-lg transition duration-300">
+                    <div>
+                        <a href="https://www.cud.ac.ae/news/canadian-university-dubai-lead-three-dff-funded-projects-advance-healthcare-innovation" target="_blank" class="block h-48 overflow-hidden relative">
+                            <span class="text-xs bg-cud-red text-white font-bold uppercase tracking-widest px-3 py-1.5 rounded absolute top-4 left-4 z-10">GRANTS</span>
+                            <img src="https://images.unsplash.com/photo-1530026405186-ed1ea0ac7a63?auto=format&fit=crop&q=80&w=800" alt="DFF Research Project" class="w-full h-full object-cover">
+                        </a>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-cud-dark leading-snug mb-3">
+                                <a href="https://www.cud.ac.ae/news/canadian-university-dubai-lead-three-dff-funded-projects-advance-healthcare-innovation" target="_blank" class="hover:text-cud-red transition">CUD to Lead Three DFF Funded Projects to Advance Healthcare Innovation</a>
+                            </h3>
+                            <p class="text-gray-600 text-sm line-clamp-3">
+                                Research initiatives focus on developing deployable computer-aided diagnostic platforms and algorithms to optimize clinical workflows.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="https://www.cud.ac.ae/news/canadian-university-dubai-lead-three-dff-funded-projects-advance-healthcare-innovation" target="_blank" class="text-cud-red font-semibold text-sm hover:underline inline-flex items-center">Read Article <span class="ml-1">→</span></a>
+                    </div>
+                </div>
+
+                <!-- Highlight Card 3 (Med workshop) -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 flex flex-col justify-between hover:shadow-lg transition duration-300">
+                    <div>
+                        <a href="https://www.cud.ac.ae/news/seast-hosts-ai-medical-imaging-and-diagnostic-applications-workshop" target="_blank" class="block h-48 overflow-hidden relative">
+                            <span class="text-xs bg-cud-red text-white font-bold uppercase tracking-widest px-3 py-1.5 rounded absolute top-4 left-4 z-10">WORKSHOP</span>
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800" alt="AI Diagnostics Workshop" class="w-full h-full object-cover">
+                        </a>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-cud-dark leading-snug mb-3">
+                                <a href="https://www.cud.ac.ae/news/seast-hosts-ai-medical-imaging-and-diagnostic-applications-workshop" target="_blank" class="hover:text-cud-red transition">SEAST Hosts AI in Medical Imaging and Diagnostic Applications Workshop</a>
+                            </h3>
+                            <p class="text-gray-600 text-sm line-clamp-3">
+                                Facilitating collaboration between computing scientists and local healthcare institutions on deploying machine-learning techniques for clinical imaging diagnostics.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="https://www.cud.ac.ae/news/seast-hosts-ai-medical-imaging-and-diagnostic-applications-workshop" target="_blank" class="text-cud-red font-semibold text-sm hover:underline inline-flex items-center">Read Article <span class="ml-1">→</span></a>
+                    </div>
+                </div>
+
+                <!-- Highlight Card 4 (Smart 2024) -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 flex flex-col justify-between hover:shadow-lg transition duration-300">
+                    <div>
+                        <a href="https://www.cud.ac.ae/news/canadian-university-dubai-stages-prestigious-international-smart-2024-conference" target="_blank" class="block h-48 overflow-hidden relative">
+                            <span class="text-xs bg-cud-red text-white font-bold uppercase tracking-widest px-3 py-1.5 rounded absolute top-4 left-4 z-10">CONFERENCE</span>
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=800" alt="SMART2024 Conference" class="w-full h-full object-cover">
+                        </a>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-cud-dark leading-snug mb-3">
+                                <a href="https://www.cud.ac.ae/news/canadian-university-dubai-stages-prestigious-international-smart-2024-conference" target="_blank" class="hover:text-cud-red transition">Canadian University Dubai Stages International SMART2024 Conference</a>
+                            </h3>
+                            <p class="text-gray-600 text-sm line-clamp-3">
+                                An international platform exploring future trends in smart city infrastructure, clean electrical distribution, and digital public policy initiatives.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="https://www.cud.ac.ae/news/canadian-university-dubai-stages-prestigious-international-smart-2024-conference" target="_blank" class="text-cud-red font-semibold text-sm hover:underline inline-flex items-center">Read Article <span class="ml-1">→</span></a>
+                    </div>
+                </div>
+
+                <!-- Highlight Card 5 (Student taxi) -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 flex flex-col justify-between hover:shadow-lg transition duration-300">
+                    <div>
+                        <a href="https://www.cud.ac.ae/news/canadian-university-dubai-students-develop-award-winning-taxi-management-system" target="_blank" class="block h-48 overflow-hidden relative">
+                            <span class="text-xs bg-cud-red text-white font-bold uppercase tracking-widest px-3 py-1.5 rounded absolute top-4 left-4 z-10">STUDENT ACHIEVEMENT</span>
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" alt="Students Award" class="w-full h-full object-cover">
+                        </a>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-cud-dark leading-snug mb-3">
+                                <a href="https://www.cud.ac.ae/news/canadian-university-dubai-students-develop-award-winning-taxi-management-system" target="_blank" class="hover:text-cud-red transition">Canadian University Dubai Students Develop Award-Winning Taxi Management System</a>
+                            </h3>
+                            <p class="text-gray-600 text-sm line-clamp-3">
+                                Undergraduates win regional hackathon with optimized machine-learning dispatch algorithms targeted for metropolitan environments.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="https://www.cud.ac.ae/news/canadian-university-dubai-students-develop-award-winning-taxi-management-system" target="_blank" class="text-cud-red font-semibold text-sm hover:underline inline-flex items-center">Read Article <span class="ml-1">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer class="bg-cud-dark text-gray-400 py-16">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-5 gap-8">
+            <div class="col-span-2">
+                <div class="flex items-center space-x-3 text-white mb-6">
+                    <span class="font-black text-xl">🍁</span>
+                    <div>
+                        <span class="block font-black text-lg tracking-tight">CANADIAN UNIVERSITY</span>
+                        <span class="block text-xs font-semibold tracking-widest text-cud-red -mt-1">DUBAI</span>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400 max-w-sm mb-6 leading-relaxed">
+                    Duly licensed and accredited higher education institution by the Ministry of Higher Education and Scientific Research, United Arab Emirates.
+                </p>
+                <div class="text-sm">
+                    <span class="block text-white font-semibold">City Walk, Dubai</span>
+                    <span class="block">United Arab Emirates</span>
+                    <span class="block mt-2 font-semibold text-white">📞 800 69283</span>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition">About CUD</a></li>
+                    <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                    <li><a href="#" class="hover:text-white transition">Mission & Vision</a></li>
+                    <li><a href="#" class="hover:text-white transition">Programs</a></li>
+                    <li><a href="#" class="hover:text-white transition">Accreditation</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Get In Touch</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-white transition">Location Map</a></li>
+                    <li><a href="#" class="hover:text-white transition">Office Timings</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Study In Canada</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Transfer Partners</a></li>
+                    <li><a href="#" class="hover:text-white transition">Study Abroad Options</a></li>
+                    <li><a href="#" class="hover:text-white transition">Accreditation Fees</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between text-xs text-gray-500">
+            <span>© 2026 Canadian University Dubai. All rights reserved.</span>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white">Sitemap</a>
+                <a href="#" class="hover:text-white">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
